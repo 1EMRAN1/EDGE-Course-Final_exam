@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bold{
+            font-weight: bold;
+        }
+        .italic{
+            font-style: italic;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="one.html">Problem 1</a> |
+        <a href="two.html">Problem 2</a> |
+        <a href="three.html">Problem 3</a> |
+        <a href="four.html">Problem 4</a> |
+        <a href="five.html">Problem 5</a> |
+        <a href="six.html">Problem 6</a> |
+        <a href="seven.html">Problem 7</a> |
+        <a href="eight.html">Problem 8</a> |
+        <a href="vue/index.html" target="_blank">Problem 9</a>
+    </nav> 
+    <br><br>
+    <h1>Problem 4</h1><br>
+    <div>
+        <p>This is a paragraph</p>
+        <button>Bold</button>
+        <button>Italic</button>
+        <button>Underline</button>
+    </div>
+    <script>
+    const buttons = document.querySelectorAll('button');
+    const paragraph = document.querySelector('p');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            switch (button.textContent) {
+                case 'Bold':
+                    paragraph.classList.toggle('bold');
+                    break;
+                case 'Italic':
+                    paragraph.classList.toggle('italic');
+                    break;
+                case 'Underline':
+                    paragraph.classList.toggle('underline');;
+                    break;
+            }
+        });
+    });
+</script>
+</body>
+</html>

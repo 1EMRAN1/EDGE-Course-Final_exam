@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="one.html">Problem 1</a> |
+        <a href="two.html">Problem 2</a> |
+        <a href="three.html">Problem 3</a> |
+        <a href="four.html">Problem 4</a> |
+        <a href="five.html">Problem 5</a> |
+        <a href="six.html">Problem 6</a> |
+        <a href="seven.html">Problem 7</a> |
+        <a href="eight.html">Problem 8</a> |
+        <a href="vue/index.html" target="_blank">Problem 9</a>
+    </nav> 
+    <br><br>
+    <h1>Problem 3</h1><br>
+    
+    <body>
+        <form action="process.php" method="POST" id="ageForm">
+            <label for="age">Enter your age:</label>
+            <input type="number" id="age" name="age" required>
+            <button type="submit">Submit</button>
+        </form>
+    
+        <script>
+            document.getElementById('ageForm').addEventListener('submit', function(event) {
+                var ageInput = document.getElementById('age').value;
+                if (ageInput > 100) {
+                    event.preventDefault();
+                    alert('Invalid Input');
+                    document.getElementById('age').classList.add('error'); // Add error class to input
+                }
+            });
+        </script>
+    </body>
+    </html>
+

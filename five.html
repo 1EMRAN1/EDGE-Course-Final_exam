@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="one.html">Problem 1</a> |
+        <a href="two.html">Problem 2</a> |
+        <a href="three.html">Problem 3</a> |
+        <a href="four.html">Problem 4</a> |
+        <a href="five.html">Problem 5</a> |
+        <a href="six.html">Problem 6</a> |
+        <a href="seven.html">Problem 7</a> |
+        <a href="eight.html">Problem 8</a> |
+        <a href="vue/index.html" target="_blank">Problem 9</a>
+    </nav> 
+    <br><br>
+    <h1>Problem 5</h1><br>
+    <div>
+        <p>Your score is: <span>0</span></p>
+        <button onclick="increaseScore()">Increase</button>
+        <button onclick="decreaseScore()">Decrease</button>
+    </div>
+
+    <script>
+        // Function to increase the score by 5
+        function increaseScore() {
+            var scoreSpan = document.querySelector("span");
+            var currentScore = parseInt(scoreSpan.textContent);
+            scoreSpan.textContent = currentScore + 5;
+        }
+
+        // Function to decrease the score by 10
+        function decreaseScore() {
+            var scoreSpan = document.querySelector("span");
+            var currentScore = parseInt(scoreSpan.textContent);
+            scoreSpan.textContent = currentScore - 10;
+        }
+    </script>
+</body>
+</html>
+
+   

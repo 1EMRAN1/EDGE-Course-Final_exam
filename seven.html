@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="one.html">Problem 1</a> |
+        <a href="two.html">Problem 2</a> |
+        <a href="three.html">Problem 3</a> |
+        <a href="four.html">Problem 4</a> |
+        <a href="five.html">Problem 5</a> |
+        <a href="six.html">Problem 6</a> |
+        <a href="seven.html">Problem 7</a> |
+        <a href="eight.html">Problem 8</a> |
+        <a href="vue/index.html" target="_blank">Problem 9</a>
+    </nav> 
+    <br><br>
+    <h1>Problem 7</h1><br>
+    
+        <div>
+            <video id="myVideo" width="320" height="240" controls>
+                <source src="video/sample.mp4" type="video/mp4">
+            </video>
+            <br>
+            <button onclick="playVideo()">Play</button>
+            <button onclick="pauseVideo()">Pause</button>
+            <button onclick="stopVideo()">Stop</button>
+        </div>
+    
+        <script>
+            var video = document.getElementById("myVideo");
+    
+            // Function to play the video
+            function playVideo() {
+                video.play();
+            }
+    
+            // Function to pause the video
+            function pauseVideo() {
+                video.pause();
+            }
+    
+            // Function to stop and reset the video
+            function stopVideo() {
+                video.pause();
+                video.currentTime = 0;
+            }
+        </script>
+        
+
+</body>
+</html>
